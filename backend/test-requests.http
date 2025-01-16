@@ -1,0 +1,89 @@
+### CREATE five documents.
+POST http://localhost:3004/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Do SE #1",
+    "dueDate": "5/13/2024",
+    "priority": 3,
+    "complete": "Yes"
+}
+
+
+### CREATE 2
+POST http://localhost:3004/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Do SE #2",
+    "dueDate": "5/06/2024",
+    "priority": 4,
+    "complete": "Yes"
+}
+
+### CREATE 3
+POST http://localhost:3004/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Do SE #3",
+    "dueDate": "06/01/2024",
+    "priority": 2,
+    "complete": "No"
+}
+
+### CREATE 4
+POST http://localhost:3004/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Do SE #4",
+    "dueDate": "06/04/2024",
+    "priority": 4,
+    "complete": "WIP"
+}
+
+### CREATE 5
+POST http://localhost:3004/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Do SE #5",
+    "dueDate": "06/04/2024",
+    "priority": 1,
+    "complete": "Half way"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3004/tasks HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3004/tasks/6667d3aa3e04de27b35429e2 HTTP/1.1
+
+
+### UPDATE one document's priority, by ID.
+### Replace the ID in the following request with one that exists
+### and update the priority:
+PUT http://localhost:3004/tasks/6667d3aa3e04de27b35429e2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Do SE #6",
+    "dueDate": "5/13/2024",
+    "priority": 8,
+    "complete": "Yes"
+
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3004/tasks/6667d3aa3e04de27b35429e2 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3004/tasks HTTP/1.1
+

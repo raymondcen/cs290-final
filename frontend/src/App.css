@@ -1,0 +1,356 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  /* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts.   */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  @import "~react-image-gallery/styles/css/image-gallery.css";
+  :root {
+    --custom-color-name:;
+    --custom-embellishment-name:;
+    --deep-blue: rgba(56,90,135,.7);
+    --beige-white: rgba(211,191,159,0.35);
+    --dull-blue: rgba(106,134,156,.85);
+    --forest-green: rgba(83,112,88,1);
+    --vanilla-cream: rgba(255,244,227,100);
+
+  }
+  i{
+    font-size:130%;
+  }
+  z{
+    padding: 15px;
+  }
+
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    background-color:;
+    background-image:url(images/background-mount-pisgah-top-view.webp);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color:var(--vanilla-cream);
+    font-family:"Montserrat", sans-serif; /* Define with at least one font name and its related generic family name.*/
+    margin:15%;
+    margin-top:3%;
+    padding:10px;
+    max-width: ;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    background-color:var(--beige-white);
+    color:var(--forest-green);
+    margin:1%;
+    padding:5px;
+    max-width:;
+    text-align: center;
+    border: 2px solid var(--forest-green); /* Use the custom color variable */
+
+  }
+  header img{
+    max-width:50px;
+  }
+
+  main {
+    background-color:var(--dull-blue);
+    color:var(--vanilla-cream);
+    margin:2%;
+    padding:15px;
+    max-width:;
+    border: 2px solid var(--vanilla-cream);
+  }
+  section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  footer {
+    background-color:var(--deep-blue);
+    color:var(--vanilla-cream);
+    margin:2%;
+    padding:4px;
+    max-width:;
+    border: 2px solid var(--vanilla-cream);
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    text-decoration:none;
+    display:flex;
+    flex-flow: row wrap;
+    margin:1%;
+    padding:5px;
+    max-width:;
+    border: 2px solid var(--vanilla-cream);
+    background-color:var(--beige-white);
+  }
+
+  nav.local {
+    text-decoration:none;
+    display:flex;
+    margin:2%;
+    padding:2px;
+    max-width:;
+    border: 2px solid var(--vanilla-cream);
+    background-color: var(--beige-white)
+  }
+  nav a {
+    color:var(--forest-green);
+    text-decoration:none;
+    margin:5px;
+    padding:3px;
+    max-width:;
+
+  }
+  nav a:hover {
+    color:var(--vanilla-cream);
+    text-decoration:none;
+    margin:5px;
+    padding:2px;
+    max-width:;
+  }
+ 
+  /*
+  .gallery figure {
+    width: 400px;
+    margin:7%;
+    padding:1%;
+    border: 2px solid var(--vanilla-cream);
+  }  
+  
+  .gallery img {
+      width:100%;
+      margin:0;
+      padding:0;
+  }
+  
+  .gallery { 
+    display: flex;
+    flex-flow: row wrap;
+    margin:; 
+    padding:;
+  }
+  
+  .gallery figcaption {
+    padding: 10px;
+    color: var(--vanilla-cream)
+  }
+  */
+.image-gallery-description { 
+  bottom:0px!important;
+  background-color: 2px solid var(--beige-white);
+  border: 2px solid var(--deep-blue);
+  color:var(--vanilla-cream)!important;
+  align: center!important;
+} 
+.image-gallery-slide { 
+  border: 2px solid var(--vanilla-cream);
+  background-color: var(--deep-blue);
+  width: 1221px;
+  color:var(--vanilla-cream);
+  margin-bottom:80px!important; 
+} 
+
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;} 
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    margin:2%;
+    padding:3%;
+    border: 3px solid var(--beige-white);
+    border-collapse:collapse;
+    width: 95%;
+    table-layout: fixed;
+  }
+  caption {
+    margin:2%;
+    padding:3%;
+    border: 3px solid var(--beige-white);
+  }
+  thead {}
+  tbody {
+    text-align:center;
+  }
+  tfoot {}
+  tr {
+    margin:10%;
+    padding:3%;
+    border-bottom:2px solid var(--beige-white);
+  }
+    tr:nth-child(even) {}
+  th {
+    margin: 10%;
+    padding:3%;
+    text-align:center;
+  }
+  td {
+    margin:10%;
+    padding:3%;
+    color: var(--vanilla-cream);
+    white-space: normal;
+  }
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form {}
+
+  fieldset {
+    margin:2%;
+    padding:3%;
+    border: 3px solid var(--beige-white);
+  }
+    legend {
+      margin:2%;
+      padding:1%;
+      border: 3px solid var(--vanilla-cream);  
+    }
+  label {
+    margin:2%;
+    padding:15px;
+    display:inline;
+  }
+  label input[type="radio"] {
+    width:15px;
+    display:inline; 
+  }
+  label input[type="checkbox"] {
+    width:15px;
+    display:inline; 
+  }
+  button {
+    background-color: var(--vanilla-cream); /* Green */
+    border: var(--forest-green);
+    color:var(--forest-green);
+    padding: 10px;
+    /* text-align: center; */
+    display: inline-block;
+    font-size: 16px;
+  }
+  input {
+    margin:1%;
+    padding:6px;
+    border: 3px solid var(--forest-green);  
+    width: 45%;
+  }
+  select {
+  margin:1%;
+  padding:6px;
+  border: 3px solid var(--forest-green);  
+  }
+    optgroup {}
+    option {}
+  textarea {
+    margin:2%;
+    padding:10px;
+    border: 3px solid var(--forest-green);  
+    height:100px;
+    width: 95%;
+    resize: none;
+  }
+  output {}
+  meter {}
+  progress {}
+  
+  
+  /* ----- Media ----- */
+  figure {}
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {}
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  
